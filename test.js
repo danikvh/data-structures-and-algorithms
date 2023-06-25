@@ -5,6 +5,9 @@ const LinkedList = require('./Linked_List/LinkedList.js');
 function mostrarResultado(titulo, resultado) {
     console.log(`\n${titulo}:`);
     console.log(resultado.toString());
+    console.log("Tamaño: " + resultado.size())
+    console.log("Head: " + resultado.getHead().value)
+    console.log("Tail: " + resultado.getTail().value)
 }
 
 // Prueba de LinkedList
@@ -14,6 +17,7 @@ function probarLinkedList() {
     list.append(20);
     list.append(30);
     list.append(40);
+    list.prepend(5);
     mostrarResultado('LinkedList', list);
 }
 
