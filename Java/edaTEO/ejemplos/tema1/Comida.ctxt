@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Comida
+comment0.text=Ejercicio\ 16
+comment1.params=c\ m
+comment1.target=Comida(double,\ int)
+comment2.params=otra
+comment2.target=int\ compareTo(Comida)
+numComments=3

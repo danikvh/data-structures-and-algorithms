@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=GestorNotas
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GestorNotas\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=n
+comment1.target=GestorNotas(int)
+comment2.params=alumno\ asignatura\ nota
+comment2.target=void\ guardarNota(java.lang.String,\ java.lang.String,\ double)
+comment3.params=alumno\ asignatura
+comment3.target=double\ consultarNota(java.lang.String,\ java.lang.String)
+comment4.params=m
+comment4.target=librerias.estructurasDeDatos.modelos.Map\ obtenerAprobados(librerias.estructurasDeDatos.modelos.Map)
+numComments=5

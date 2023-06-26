@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=LEGColaOrdenada
+comment0.text=Ejercicio\ 17
+comment1.params=e
+comment1.target=void\ encolar(java.lang.Comparable)
+comment1.text=\ inserta\ el\ Elemento\ e\ en\ una\ Cola\ de\ manera\ ordenada\ \r\n
+numComments=2

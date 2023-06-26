@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LEGListaConPI1920
+comment0.text=Ejercicio\ 19\ y\ 20
+comment1.params=l1\ l2
+comment1.target=librerias.estructurasDeDatos.modelos.Cola\ eliminaComunStatic(librerias.estructurasDeDatos.modelos.ListaConPI,\ librerias.estructurasDeDatos.modelos.ListaConPI)
+comment1.text=\ m\u00E9todo\ est\u00E1tico\ tal\ que,\ dadas\ dos\ ListasConPI\ gen\u00E9ricas,\ ambas\ sin\ \r\n\ elementos\ repetidos\ y\ ordenados\ ascendentemente,\ elimine\ de\ dichas\ \r\n\ listas\ todos\ los\ elementos\ que\ tengan\ en\ com\u00FAn\ y\ los\ devuelva\ almacenados\ en\ una\ cola.\r\n
+comment2.params=l
+comment2.target=LEGCola\ eliminaComun(librerias.estructurasDeDatos.modelos.ListaConPI)
+comment2.text=\ dadas\ dos\ ListaConPI\ gen\u00E9ricas,\ ambas\ CON\ elementos\ repetidos\ y\r\n\ ordenados\ ascendentemente,\ elimine\ de\ dichas\ listas\ todos\ los\ elementos\r\n\ que\ tengan\ en\ com\u00FAn\ y\ los\ devuelva\ almacenados\ en\ una\ cola.\r\n
+comment3.params=l
+comment3.target=boolean\ capicua(librerias.estructurasDeDatos.modelos.ListaConPI)
+comment3.text=\ dados\ dos\ ListasConPI\ gen\u00E9ricas,\ compruebe\ si\ ambas\ listas\ contienen\r\n\ los\ mismos\ elementos\ pero\ en\ orden\ inverso.\r\n
+numComments=4
