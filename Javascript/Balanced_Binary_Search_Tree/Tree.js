@@ -129,6 +129,47 @@ class Tree {
 
     }
 
+    // Accept a function parameter. Each of these functions should traverse the tree in their respective 
+    // depth-first order and yield each node to the provided function given as an argument. The functions 
+    // should return an array of values if no function is given.
+    inorder(f) {
+
+    }
+
+    preorder(f) {
+
+    }
+
+    postorder(f) {
+
+    }
+
+    // Accepts a node and returns its height (number of edges in longest path from a given node to a leaf node)
+    height(node = this.root) {
+        if (node === null) { 
+            return 0
+        }
+        const leftHeight = this.height(node.left)
+        const rightHeight = this.height(node.right)
+        
+        return(Math.max(leftHeight,rightHeight)+1)
+    }
+
+    // Accepts a node and returns its depth (the number of edges in path from a given node to the tree’s root node)
+    depth(node) {
+
+    }
+
+    // A balanced tree is one where the difference between heights of left subtree and right subtree of every node is not more than 1.
+    isBalanced() {
+
+    }
+
+    // Rebalances an unbalanced tree. You’ll want to use a traversal method to provide a new array to the buildTree function.
+    rebalance() {
+
+    }
+
     static prettyPrint(node, prefix = "", isLeft = true) {
         if (node === null) {
           return;

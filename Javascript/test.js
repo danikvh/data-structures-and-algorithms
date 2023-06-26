@@ -28,7 +28,7 @@ function probarLinkedList() {
     mostrarResultado('LinkedList', list);
 }
 
-// Prueba de otras estructuras de datos
+// Prueba BST
 function probarBST() {
     arr = [1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324]
     tree = new Tree(arr)
@@ -38,10 +38,38 @@ function probarBST() {
     mostrarResultado('Balanced Binary Search Tree', tree);
 }
 
+// Prueba BST Odin's Project
+function probarBST2() {
+    // 1. Create a BST from a random array
+    const array = [];
+    for (let i = 0; i < 50; i++) {
+        const numeroAleatorio = Math.floor(Math.random() * 100); // Genera un número aleatorio entre 0 y 99
+        array.push(numeroAleatorio);
+    }
+    tree = new Tree(array)
+
+    // 2. Confirm that the tree is balanced by calling isBalanced.
+    
+    // 3. Print out all elements in level, pre, post, and in order.
+
+    // 4. Unbalance the tree by adding several numbers > 100.
+
+    // 5. Confirm that the tree is unbalanced by calling isBalanced.
+
+    // 6. Balance the tree by calling rebalance.
+
+    // 7. Confirm that the tree is balanced by calling isBalanced.
+
+    // 8. Print out all elements in level, pre, post, and in order.
+
+    mostrarResultado('Balanced Binary Search Tree ODIN', tree);
+}
+
 // Ejecutar las pruebas
 function ejecutarPruebas() {
     probarLinkedList();
     probarBST();
+    probarBST2();
 }
 
 // Ejecutar las pruebas al cargar la página
