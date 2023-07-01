@@ -13,7 +13,7 @@ class Tree {
         // Caso base
         if (arr.length == 0) return null
 
-        const middle = Math.floor(arr.length / 2);
+        const middle = Math.floor(arr.length / 2)
         const raiz = new Node(arr[middle])
 
         raiz.left = this.buildTree(arr.slice(0,middle))
@@ -125,15 +125,34 @@ class Tree {
     // be implemented using either iteration or recursion. The method should return an array of values 
     // if no function is given. Tip: You will want to use an array acting as a queue to keep track 
     // of all the child nodes that you have yet to traverse and to add new ones to the list
-    levelOrder(f) {
+    levelOrder(root = this.root) {
+        if (root === null) return
 
+        let queue = []
+        let res = []
+        queue.push(root)
+        while(queue.length > 0) {
+            let node = queue.shift()
+            if (node.left != null) queue.push(node.left)
+            if (node.right != null) queue.push(node.right)
+            res.push(node.data)
+        }
+        return res
     }
 
     // Accept a function parameter. Each of these functions should traverse the tree in their respective 
     // depth-first order and yield each node to the provided function given as an argument. The functions 
     // should return an array of values if no function is given.
-    inorder(f) {
+    inorder(root = this.root, arr = []) {
+        if (root === null) return arr
 
+        if (root.left) this.inorder(root.left, arr)
+
+        arr.push(root.data)
+
+        if (root.right) this.inorder(root.right, arr)
+
+        return arr
     }
 
     preorder(f) {
