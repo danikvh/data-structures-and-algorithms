@@ -155,8 +155,16 @@ class Tree {
         return arr
     }
 
-    preorder(f) {
+    preorder(root = this.root, arr = []) {
+        if (root === null) return arr
 
+        arr.push(root.data)
+
+        if (root.left) this.preorder(root.left, arr)
+
+        if (root.right) this.preorder(root.right, arr)
+
+        return arr
     }
 
     postorder(f) {
