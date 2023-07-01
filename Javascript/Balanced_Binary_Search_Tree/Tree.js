@@ -167,8 +167,16 @@ class Tree {
         return arr
     }
 
-    postorder(f) {
+    postorder(root = this.root, arr = []) {
+        if (root === null) return arr
 
+        if (root.left) this.postorder(root.left, arr)
+
+        if (root.right) this.postorder(root.right, arr)
+
+        arr.push(root.data)
+
+        return arr
     }
 
     // Accepts a node and returns its height (number of edges in longest path from a given node to a leaf node)

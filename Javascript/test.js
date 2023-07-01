@@ -54,6 +54,7 @@ function probarBST2() {
     console.log("Levelorder: " + tree.levelOrder())
     console.log("Inorder: " + tree.inorder())
     console.log("Preorder: " + tree.preorder())
+    console.log("Postorder: " + tree.postorder())
     // 4. Unbalance the tree by adding several numbers > 100.
 
     // 5. Confirm that the tree is unbalanced by calling isBalanced.
